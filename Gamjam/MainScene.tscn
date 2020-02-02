@@ -1,11 +1,23 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://TestPlayer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Level1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://EnemyBase.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Enemy3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemy2.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 266.181, 15.5177 )
-
 [node name="TileMap" parent="." instance=ExtResource( 2 )]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 790.207, 295.611 )
+
+[node name="EnemyBase" parent="." instance=ExtResource( 3 )]
+position = Vector2( 999.663, 259.133 )
+
+[node name="EnemyBase2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 381.054, 263.159 )
+
+[node name="EnemyBase3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 584.827, 266.776 )
